@@ -3,6 +3,8 @@ package ruan.nunes;
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.Entity;
 
+import java.math.BigDecimal;
+
 
 /**
  * Example JPA entity defined as a Panache Entity.
@@ -26,4 +28,8 @@ import jakarta.persistence.Entity;
 @Entity
 public class MyEntity extends PanacheEntity {
     public String field;
+    public BigDecimal priceBuy;
+    public BigDecimal priceSell;
+    public float performance;
+    public BigDecimal performance_amount;
 }
